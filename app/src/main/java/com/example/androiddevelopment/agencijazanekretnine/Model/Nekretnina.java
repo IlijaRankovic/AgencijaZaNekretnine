@@ -1,6 +1,8 @@
 package com.example.androiddevelopment.agencijazanekretnine.Model;
 
+import com.j256.ormlite.dao.ForeignCollection;
 import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.field.ForeignCollectionField;
 import com.j256.ormlite.table.DatabaseTable;
 
 /**
@@ -17,6 +19,7 @@ public class Nekretnina {
     public static final String TABLE_NAME_SQUARE = "kvadratura";
     public static final String TABLE_NAME_NUMBER_ROOMS = "broj soba";
     public static final String TABLE_NAME_PRICE = "cena";
+    public static final String TABLE_NAME_PHOTOS = "slike";
 
     @DatabaseField(columnName = FIELD_NAME_ID, generatedId = true)
     private int id;
@@ -34,6 +37,12 @@ public class Nekretnina {
     private int brojSoba;
     @DatabaseField(columnName = TABLE_NAME_PRICE)
     private double cena;
+    @ForeignCollectionField(columnName = Nekretnina.TABLE_NAME_PHOTOS, eager = true)
+    private ForeignCollection<Slika> slike;
+
+    public Nekretnina (){
+
+    }
 
     public int getId() {
         return id;
