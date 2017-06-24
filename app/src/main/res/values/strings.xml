@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">AgencijaZaNekretnine</string>
+    <string name="app_name">Agencija za nekretnine</string>
+
+    <string name="add_new_real_estate">Add real estate</string>
+    <string name="main_activity_action_add">Add</string>
+
+    <string name="dialog_app_naziv">O aplikaciji</string>
+    <string name="dialog_app_tekst">Ilija Rankovic</string>
+    <string name="dialog_app_Uredu">U redu</string>
+    <string name="dialog_app_Ponisti">Ponisti</string>
+
 </resources>

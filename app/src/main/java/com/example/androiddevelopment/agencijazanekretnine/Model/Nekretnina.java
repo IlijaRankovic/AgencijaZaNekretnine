@@ -30,13 +30,13 @@ public class Nekretnina {
     @DatabaseField(columnName = TABLE_NAME_ADDRESS)
     private String adresa;
     @DatabaseField(columnName = TABLE_NAME_NUMBER_PHONE)
-    private int brojTelefona;
+    private String brojTelefona;
     @DatabaseField(columnName = TABLE_NAME_SQUARE)
-    private double kvadratura;
+    private String kvadratura;
     @DatabaseField(columnName = TABLE_NAME_NUMBER_ROOMS)
-    private int brojSoba;
+    private String brojSoba;
     @DatabaseField(columnName = TABLE_NAME_PRICE)
-    private double cena;
+    private String cena;
     @ForeignCollectionField(columnName = Nekretnina.TABLE_NAME_PHOTOS, eager = true)
     private ForeignCollection<Slika> slike;
 
@@ -76,35 +76,35 @@ public class Nekretnina {
         this.adresa = adresa;
     }
 
-    public int getBrojTelefona() {
+    public String getBrojTelefona() {
         return brojTelefona;
     }
 
-    public void setBrojTelefona(int brojTelefona) {
+    public void setBrojTelefona(String brojTelefona) {
         this.brojTelefona = brojTelefona;
     }
 
-    public double getKvadratura() {
+    public String getKvadratura() {
         return kvadratura;
     }
 
-    public void setKvadratura(double kvadratura) {
+    public void setKvadratura(String kvadratura) {
         this.kvadratura = kvadratura;
     }
 
-    public int getBrojSoba() {
+    public String getBrojSoba() {
         return brojSoba;
     }
 
-    public void setBrojSoba(int brojSoba) {
+    public void setBrojSoba(String brojSoba) {
         this.brojSoba = brojSoba;
     }
 
-    public double getCena() {
+    public String getCena() {
         return cena;
     }
 
-    public void setCena(double cena) {
+    public void setCena(String cena) {
         this.cena = cena;
     }
 
